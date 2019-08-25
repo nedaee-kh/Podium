@@ -78,6 +78,7 @@ let podBillingService = new PodBillingService({
 38. enableDealerProductPermission
 <div class="box-end">
 </div>
+
 ## گرفتن توکن یکبارمصرف
 1. getOtt: برای گرفتنott (توکن یک بار مصرف) از این تابع استفاده می شود
 
@@ -110,6 +111,7 @@ podBillingService.getOtt(getOttData)
 
 <div class="box-end">
 </div>
+
 ## ایجاد فاکتور
 2. issueInvoice: با این تابع می توانید یک فاکتور ایجاد کنید. ott مورد نیاز را از تابع  getOtt دریافت کنید. مقدار پیش فرض مالیات برابر با 0.09  است.
 
