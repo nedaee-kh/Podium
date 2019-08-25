@@ -25,6 +25,7 @@ let podDealingService= new PodDealingService ({});
 
 <div class="box-end">
 </div>
+
 ## توابع
 1.  addUserAndBusiness
 2.  listUserCreatedBusiness
@@ -139,6 +140,7 @@ podDealingService.addUserAndBusiness(addUserAndBusinessData)
 
 <div class="box-end">
 </div>
+
 ## listUserCreatedBusiness
  با استفاده از این تابع می توانید لیست کسب و کارهایی را که ثبت کرده اید دریافت کنید یا در میان آن ها جستجو انجام دهید.
 
@@ -243,6 +245,7 @@ podDealingService.listUserCreatedBusiness(listUserCreatedBusinessData)
 
 <div class="box-end">
 </div>
+
 ## updateBusiness
  با استفاده از این تابع می توانید اطلاعات کسب و کاری را که قبلا ثبت نموده اید ویرایش کنید
 
@@ -348,6 +351,7 @@ podDealingService.updateBusiness(updateBusinessData)
 
 <div class="box-end">
 </div>
+
 ## getApiTokenForCreatedBusiness
 
  با استفاده از این تابع می توانید API TOKEN کسب و کاری را که ثبت کرده اید دریافت کنید
@@ -390,6 +394,7 @@ podDealingService.getApiTokenForCreatedBusiness(getApiTokenForCreatedBusinessDat
 
 <div class="box-end">
 </div>
+
 ## rateBusiness
 
  کاربرانی که خرید موفق داشته باشند و دنبال کننده کسب و کار باشند، می توانند به کسب و کار مربوطه امتیاز دهند، برای ثبت امتیاز کسب و کار توکن دسترسی کاربر مورد نیاز است و از طریق سرویس زیر انجام می گیرد.  امتیاز عددی بین صفر تا ده است.
@@ -417,6 +422,7 @@ podDealingService.rateBusiness(rateBusinessData)
 
 <div class="box-end">
 </div>
+
 ## commentBusiness
 
  کاربران می توانند نظر خود را برای یک کسب و کار ثبت نمایند. برای این منظور از این تابع به همراه توکن دسترسی کاربر استفاده نمایید. علاوه بر آن، کسب و کار می تواند برای خودش نیز، نظر ثبت کند.
@@ -458,6 +464,7 @@ podDealingService.commentBusiness(commentBusinessData)
 
 <div class="box-end">
 </div>
+
 ## businessFavorite
  با استفاده از سرویس زیر، کاربر می تواند کسب و کار را به لیست علاقمندی های خود اضافه کند
 
@@ -496,6 +503,7 @@ podDealingService.businessFavorite(businessFavoriteData)
 
 <div class="box-end">
 </div>
+
 ## userBusinessInfos
 
  برای دریافت اطلاعات مربوط به تعاملات کاربر با کسب و کارها می توان از تابع زیر استفاده نمود. در اینجا منظور از تعامل به عنوان مثال:
@@ -547,6 +555,7 @@ podDealingService.userBusinessInfos(userBusinessInfosData)
 
 <div class="box-end">
 </div>
+
 ##  commentBusinessList
 
  با استفاده از این تابع می توانید نظرات ثبت شده را مشاهده کنید. اگر فراخوانی سرویس با توکن لاگین شده کاربر صورت پذیرد، تنها نظرات کاربر را در نتیجه برمی گرداند و اگر توکن کسب وکار باشد، کل نظرات ثبت شده برای کسب و کار را نمایش خواهد داد.
@@ -590,6 +599,7 @@ let commentBusinessListData = {
 
 <div class="box-end">
 </div>
+
 ## confirmComment
 
   کسب و کار می تواند نظرات داده شده توسط کاربران را تایید یا رد نماید. دقت داشته باشید که API TOKEN شما باید توکن کسب و کاری باشد که نظر برای آن ثبت شده است.
