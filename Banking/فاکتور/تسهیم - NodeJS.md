@@ -43,6 +43,7 @@ podBillingService.addDealer(addDealerData)
 
 <div class="box-end">
 </div>
+
 ## لیست کسب‌وکارهای واسط
 28. dealerList: برای دریافت یا جستجوی لیست تمام کسب و کارهایی که به آنها مجوز معامله و صدور فاکتور داده اید  می توانید از این تابع استفاده کنید
 
@@ -110,6 +111,7 @@ podBillingService.dealerList(dealerListData)
 
 <div class="box-end">
 </div>
+
 ## فعالسازی کارگزار
 29. enableDealer: با استفاده از این تابع می توانید کسب کارهای واسط را فعال کنید
 
@@ -171,6 +173,7 @@ podBillingService.enableDealer(enableDealerData)
 
 <div class="box-end">
 </div>
+
 ## غیرفعالسازی کسب‌وکار واسط
 30. disableDealer: با استفاده از این تابع می توانید کسب کارهای واسط را غیر فعال کنید
 
@@ -232,6 +235,7 @@ podBillingService.disableDealer(disableDealerData)
 
 <div class="box-end">
 </div>
+
 ## لیست کسب‌وکارهایی که واسط آن‌ها شده‌اید
 31. businessDealingList: با فراخوانی سرویس ذیل می توانید لیست کسب و کارهایی که واسط آن ها شده اید را دریافت نمایید.
 
@@ -323,6 +327,7 @@ podBillingService.businessDealingList(businessDealingListData)
 
 <div class="box-end">
 </div>
+
 ## صدور فاکتور تسهیمی
 32. issueMultiInvoice: کسب و کار معامله گر می تواند با استفاده از این تابع یک فاکتور تسهیمی ثبت نماید
 
