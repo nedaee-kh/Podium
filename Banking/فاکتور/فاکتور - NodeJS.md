@@ -220,6 +220,7 @@ podBillingService.issueInvoice(issueInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## ایجاد پیش‌فاکتور
 3. createPreInvoice: با استفاده از این تابع می توانید یک پیش فاکتور ایجاد کنید. از خروجی این تابع می توانید لینک نمایش این پیش فاکتور را دریافت کنید. با ورود کاربر به صفحه پرداخت این فاکتور برای شما ثبت خواهد شد.
 
@@ -271,6 +272,7 @@ podBillingService.createPreInvoice(createPreInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## گرفتن لیست فاکتورها
 
 4. getInvoiceList: با این تابع می توانید لیست فاکتورهای خود را ببنید و در آن ها بر اساس معیارهای مختلف همانند وضعیت و تاریخ جست و جو کنید
@@ -362,6 +364,7 @@ podBillingService.getInvoiceList(getInvoiceListData)
 
 <div class="box-end">
 </div>
+
 ## پرداخت فاکتور 
 5. payInvoice: با این تابع می توانید پرداخت های غیر متعارف (خارج از پلتفرم را کنترل کنید) به عنوان مثال اگر مبلغ فاکتور را به صورت حضوری از مشتری دریافت کردید می توانید با صدا زدن این تابع وضعیت فاکتور مورد نظر خود را به صورت پرداخت شده ببرید.
 
@@ -398,6 +401,7 @@ podBillingService.payInvoice(payInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## ارسال پیامک پرداخت فاکتور
 6. sendInvoicePaymentSMS: با استفاده از این تابع می توانید پیامک پرداخت فاکتور را برای کاربر ارسال کنید و در صورت تایید او فاکتور پرداخت خواهد شد.
 
@@ -438,6 +442,7 @@ podBillingService.sendInvoicePaymentSMS(sendInvoicePaymentSMSData)
 
 <div class="box-end">
 </div>
+
 ## گرفتن لیست فاکتورها بر اساس متادیتا
 7. getInvoiceListByMetadata: در هنگام ثبت فاکتور می توانید اطلاعات دلخواه خود را در کلید metadata قرار دهید. در صورتی که بخواهید در بین متا دیتای فاکتورهای خود جستجو کنید می توانید از این تابع استفاده کنید.
 
@@ -510,6 +515,7 @@ podBillingService.getInvoiceListByMetadata(getInvoiceListByMetadataData)
 
 <div class="box-end">
 </div>
+
 ## گرفتن لیست فاکتورها به صورت فایل
 
 8. getInvoiceListAsFile: ا این تابع می توانید بر اساس پارامترهای مختلف فاکتورها را فیلتر کنید و از نتیجه حاصل یک فایل اکسل تولید کنید. خروجی این تابع دارای خصیصه id ساخت که در ادامه برای دانلود فایل اکسل مورد نیاز است. ساخت فایل اکسل مدت زمانی طول می کشید و برای دریافت آن باید از تابع getExportList و id گرفته شده در این مرحله استفاده کرد.
@@ -564,6 +570,7 @@ podBillingService.getInvoiceListAsFile(getInvoiceListAsFileData)
 
 <div class="box-end">
 </div>
+
 ## تایید فاکتور
 9. verifyInvoice: اگر در هنگام صدور فاکتور کلید verificationNeeded را برابر با true قرار دهیم. فاکتور سه مرحله ایجاد شده و با استفاده از این تابع بعد از پرداخت فاکتور، می توانید پرداخت شدن آن را تایید کنید.
 
@@ -586,6 +593,7 @@ podBillingService.verifyInvoice(verifyInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## ابطال فاکتور
 10. cancelInvoice: با استفاده از این تابع می توانید یک فاکتور را ابطال کنید.
 
@@ -619,6 +627,7 @@ podBillingService.cancelInvoice(cancelInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## کاهش فاکتور
 11. reduceInvoice: در مواردی ممکن است نیاز به تغییری در بندهای فاکتور داشته باشید. در صورتی که فاکتور پرداخت نشده است، فاکتور قبلی را باطل (cancel) نمایید و فاکتور جدیدی صادر کنید. اگر فاکتور پرداخت شده است(در صورتی که باید پول بیشتری از مشتری دریافت نمایید)، لازم است فاکتوری جداگانه به مبلغ افزوده شده، با ذکر دلیل صادر نموده و مشتری را مجددا برای پرداخت هدایت نمایید. <u>در برخی مواقع لازم است مبلغی از فاکتور پرداخت شده به مشتری بازگردانده شود. برای این منظور از این تابع استفاده کنید.</u>
 
@@ -710,6 +719,7 @@ podBillingService.reduceInvoice(reduceInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## تایید و بستن فاکتور
 12. verifyAndCloseInvoice: اگر در هنگام صدور فاکتور کلید verificationNeeded را برابر با true قرار دهیم. فاکتور سه مرحله ایجاد شده و با استفاده از این تابع بعد از پرداخت فاکتور، می توانید پرداخت شدن آن را تایید کنید و همزمان فاکتور را نیز ببندید.
 
@@ -732,6 +742,7 @@ podBillingService.verifyAndCloseInvoice(verifyAndCloseInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## بستن فاکتور
 13. closeInvoice: با این تابع می توانید یک فاکتور را ببندید. دقت داشته باشید برای تسویه باید فاکتورها را بسته باشید.
 
@@ -768,6 +779,7 @@ podBillingService.closeInvoice(closeInvoiceData)
 
 <div class="box-end">
 </div>
+
 ## گرفتن لینک پرداخت فاکتور
 14. getInvoicePaymentLink: با این تابع می توانید لینک پرداخت یک فاکتور را دریافت کنید و فاکتور را از طریق درگاه بانکی پرداخت کنید
 
@@ -807,6 +819,7 @@ podBillingService.getInvoicePaymentLink(getInvoicePaymentLinkData)
 
 <div class="box-end">
 </div>
+
 ## پرداخت فاکتور به وسیله‌ی فاکتور
 15. payInvoiceByInvoice: از طریق این سرویس کسب و کار قادر خواهد بود که پرداخت شدن برخی فاکتورهای خود را منوط به پرداخت شدن فاکتورهای دیگری نماید. یا به عبارتی نوعی تهاتر را بوسیله فاکتورها انجام دهد.
 
@@ -832,6 +845,7 @@ podBillingService.payInvoiceInFuture(payInvoiceInFutureData)
 
 <div class="box-end">
 </div>
+
 ## پرداخت فاکتور در آینده
 16. payInvoiceInFuture: از طریق این تابع کسب و کار قادر خواهد بود فاکتورهایی که برایش توسط دیگران صادر شده را درتاریخ آینده یا سررسید توافقی از طریق مبلغی که در کیف پول یا اصناف خود دارد پرداخت نماید .این سرویس باید توسط کسب و کار یا کاربر بدهکار یا شخصی که فاکتور برایش صادر شده صدا زده شود.
 
@@ -857,6 +871,7 @@ podBillingService.payInvoiceInFuture(payInvoiceInFutureData)
 
 <div class="box-end">
 </div>
+
 ## گرفتن لیست خروجی
 17. getExportList: این تابع لینک دانلود فایل های اکسل تولید شده را به شما خواهد داد. همچنین  با داشتن id ای که تابع getInvoiceListAsFile در خروجی می دهد می توانید تنها لینک دانلود فایل مورد نظر خود را استخراج کنید.
 
@@ -902,6 +917,7 @@ podBillingService.getExportList(getExportListData)
 
 <div class="box-end">
 </div>
+
 ## درخواست تسویه‌حساب کیف پول
 18. requestWalletSettlement: این تابع انتقال پول از کیف پول به حساب بانکی را انجام می دهد. به عبارت دیگر مبلغ مورد نظر خود را با استفاده از این تابع می توانید از کیف پول خود به حساب بانکی منقل کنید.
 
@@ -932,6 +948,7 @@ podBillingService.requestWalletSettlement(requestWalletSettlementData)
 
 <div class="box-end">
 </div>
+
 ## درخواست تسویه‌حساب صنف
 19. requestGuildSettlement: این تابع انتقال پول ازهر یک از حساب های صنفی را به حساب بانکی انجام می دهد.
 
@@ -962,6 +979,7 @@ podBillingService.requestGuildSettlement(requestGuildSettlementData)
 
 <div class="box-end">
 </div>
+
 ## درخواست تسویه‌حساب با ابزار
 20. requestSettlementByTool: این تابع انتقال پول از هر یک از حساب های صنفی را به حساب بانکی انجام می دهد. علاوه بر این با استفاده از این تابع می توانید انتخاب  کنید که به چه روشی و به کدام حساب پول (کارت یا شبا) منتقل شود. در صورت استفاده از ابزار کارت به کارت، کارمزد بانکی از حساب کسب و کار کسر خواهد شد و در صورت استفاده از ابزار پایا، انتقال وجه در زمان مصوب بانک مرکزی انجام خواهد شد.
 
@@ -993,6 +1011,7 @@ podBillingService.requestSettlementByTool(requestSettlementByToolData)
 
 <div class="box-end">
 </div>
+
 ## لیست تسویه‌حساب‌ها
 21. listSettlements: با استفاده از این تابع می توانید لیست تسویه حساب های خود را ببینید یا در میان آن ها جست و جو کنید.
 
@@ -1053,6 +1072,7 @@ podBillingService.listSettlements(listSettlementsData)
 
 <div class="box-end">
 </div>
+
 ## تسویه‌حساب خودکار
 22. addAutoSettlement: در صورتی که تسویه خودکار برای یک کسب و کار فعال شود، مبلغ قابل تسویه آن کسب و کار به طور خودکار، یکبار در شبانه روز به شماره شبای اعلام شده در پروفایل کسب و کار یا شماره شبای اعلامی در سرویس زیر، تسویه می گردد.  با این تابع می توانید تسویه خودکار را بر روی هر کدام از حساب های صنفی خود فعال کنید.
 
@@ -1094,6 +1114,7 @@ podBillingService.addAutoSettlement(addAutoSettlementData)
 
 <div class="box-end">
 </div>
+
 ## حذف تسویه‌حساب خودکار
 23. removeAutoSettlement: با استفاده از این تابع می توانید تسویه حساب خودکار را از روی هر کدام از حساب های صنفی غیر فعال کنید
 
@@ -1131,6 +1152,7 @@ podBillingService.removeAutoSettlement(removeAutoSettlementData)
 
 <div class="box-end">
 </div>
+
 ## گرفتن لینک پرداخت فاکتور با کیف پول
 24. getPayInvoiceByWalletLink: با این تابع می توانید لینک پرداخت یک فاکتور را دریافت کنید و فاکتور را از طریق  کیف پول و یا درگاه بانکی پرداخت کنید
 
@@ -1163,6 +1185,7 @@ https://pay.pod.land/v1/pbc/payInvoice/?invoiceid=3526061&redirectUri=http://www
 
 <div class="box-end">
 </div>
+
 ## گرفتن لینک پرداخت فاکتور
 25. getPayInvoiceByUniqueNumberLink: با این تابع می توانید لینک پرداخت یک فاکتور را دریافت کنید و فاکتور را از درگاه بانکی پرداخت کنید
 
@@ -1196,6 +1219,7 @@ https://pay.pod.land/v1/pbc/payInvoiceByUniqueNumber/?uniqueNumber=7d85b52c6b4b9
 
 <div class="box-end">
 </div>
+
 ## لیست اصناف
 26. guildList: با این تابع لیست اصناف را در اختیار شما قرار می دهد
 
@@ -1235,6 +1259,7 @@ podBillingService.guildList(guildListData)
 
 <div class="box-end">
 </div>
+
 ## افزودن کسب‌وکار واسط
 27. addDealer: در صورتی که بخشی از فروش شما به کسب و کار دیگری تعلق دارد و می خواهید فاکتور به نام همان کسب و کار ثبت شود، لازم است آن کسب و کار، به کسب و کار شما اجازه صدور فاکتور به عنوان معامله گر را داده باشد. با در اختیار داشتن شناسه کسب و کار دیگر با استفاده از این تابع می توانید این اجازه را صادر کنید.
 
@@ -1279,6 +1304,7 @@ podBillingService.addDealer(addDealerData)
 
 <div class="box-end">
 </div>
+
 ## لیست کسب‌وکارهای واسط
 28. dealerList: برای دریافت یا جستجوی لیست تمام کسب و کارهایی که به آنها مجوز معامله و صدور فاکتور داده اید  می توانید از این تابع استفاده کنید
 
@@ -1346,6 +1372,7 @@ podBillingService.dealerList(dealerListData)
 
 <div class="box-end">
 </div>
+
 ## فعالسازی کارگزار
 29. enableDealer: با استفاده از این تابع می توانید کسب کارهای واسط را فعال کنید
 
@@ -1407,6 +1434,7 @@ podBillingService.enableDealer(enableDealerData)
 
 <div class="box-end">
 </div>
+
 ## غیرفعالسازی کسب‌وکار واسط
 30. disableDealer: با استفاده از این تابع می توانید کسب کارهای واسط را غیر فعال کنید
 
@@ -1468,6 +1496,7 @@ podBillingService.disableDealer(disableDealerData)
 
 <div class="box-end">
 </div>
+
 ## لیست کسب‌وکارهایی که واسط آن‌ها شده‌اید
 31. businessDealingList: با فراخوانی سرویس ذیل می توانید لیست کسب و کارهایی که واسط آن ها شده اید را دریافت نمایید.
 
@@ -1559,6 +1588,7 @@ podBillingService.businessDealingList(businessDealingListData)
 
 <div class="box-end">
 </div>
+
 ## صدور فاکتور تسهیمی
 32. issueMultiInvoice: کسب و کار معامله گر می تواند با استفاده از این تابع یک فاکتور تسهیمی ثبت نماید
 
