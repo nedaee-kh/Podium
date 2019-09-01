@@ -43,13 +43,11 @@ int a = int.Parse("10");
 
 
 - [بن شارژ اعتبار](#couponCharge)
-- [بن تخفیف مبلغی](#%D9%86%D8%AA%DB%8C%D8%AC%D9%87-%DA%AF%DB%8C%D8%B1%DB%8C)
+- [بن تخفیف مبلغی](#%D8%A8%D9%86-%D8%AA%D8%AE%D9%81%DB%8C%D9%81-%D9%85%D8%A8%D9%84%D8%BA%DB%8C)
 - [بن تخفیف درصدی](#couponPercent)
 - [اعمال ووچر به فاکتور](#couponVoucherToBill)
 - [دریافت و جستجو لیست بن‌ها](#couponList)
 - [فعالسازی و غیرفعالسازی بن تخفیف](#couponActivation)
-
-
 
 ## بن تخفیف
 
